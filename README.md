@@ -20,11 +20,9 @@
 
 The simulation system models transit around the University of Minnesota campus via bus, displaying the routings and statistics on a webpage in a timely manner.
 
-
-
 ### System Architecture
 
-![simulation_architecture](/Users/qianzecheng/Code/visual-transit-system-simulator/docs/images/simulation_architecture.png)
+![](https://raw.githubusercontent.com/Aden-Q/blogImages/main/img/202203221857906.png)
 
 ### Demo
 
