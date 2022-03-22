@@ -26,44 +26,26 @@ The simulation system models transit around the University of Minnesota campus v
 
 ## Directory Structures
 
-+   `config`:
-    +   Contains `config.txt` which is a configuration file for bus stops and routes used by the transit simulation system, can be customized.
-+   `cpplint`:
-    +   `cpplint-cse.sh`: Automatic Google Style cpplint script that only works CSE lab machines.
-    +   `cpplint.py`: Python script of Google Style cpplint.
-+   `docs`:
-    +   Documentation files and images.
++   `config`: Contains `config.txt` which is a configuration file for bus stops and routes used by the transit simulation system, can be customized.
++   `cpplint`: Automatic Google Style cpplint script.
++   `docs`: Documentation files and images.
++   `drivers`: Contains source code with the main function that is used to create the drivers files for entities in the simulation system.
++   `googletest`:GoogleTest suits for unit testing and regression testing.
++   `src`: Directory that contains all the source code (.cc AND .h) for the backend simulator. 
++   `test`: Directory of creating unit tests, using [Google Test](https://github.com/google/googletest) framework.
++   `build`: Created by `Makefile`, containing all the executables.
 
-+   `drivers`:
-    +   Contains source code with the main function that is used to create the drivers files for entities in the simulation system.
-+   `googletest`:
-    +   GoogleTest suits for unit testing and regression testing.
-
-+   `src`: 
-    +   Directory that contains all the source code (.cc AND .h) for the backend simulator. 
-+   `test`:
-    +   Directory of creating unit tests, using [Google Test](https://github.com/google/googletest) framework.
-+   `build`:
-    +   `bin`: Created by `Makefile`, containing all the executables.
-
-+   `web_code`:
-    +   `web`: Source code for the web server used to enable communication between the visualization component and the backend simulation system.
-+   `web_graphics`:
-    +   Frontend HTML/CSS/JavaScript source code used to render the web page. It enables to configure and run the transit simulation system from the local browser.
++   `web_code`: Source code for the web server used to enable communication between the visualization component and the backend simulation system.
++   `web_graphics`: Frontend HTML/CSS/JavaScript source code used to render the web page. It enables to configure and run the transit simulation system from the local browser.
 
 ## Features
 
--[] Visualization on a web page
-
--[] Functionality to Pause / Resume
-
--[] Logging the statistics
-
--[] Runtime behavior modificaiton at runtime
-
--[] Linking to database server
-
--[] Deployment on the clound
+- [x] Visualization on a web page
+- [x] Functionality to Pause / Resume
+- [x] Logging the statistics
+- [x] Runtime behavior modificaiton at runtime
+- [] Linking to a database server
+- [] Deployment on the clound
 
 ## Dependencies
 
