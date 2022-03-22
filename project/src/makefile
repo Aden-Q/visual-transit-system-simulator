@@ -22,7 +22,7 @@ SRCDIR = .
 DRIVERDIR = ../drivers
 
 # Output directories for the build process
-PROJ_DIR = $(REPOROOTDIR)/project
+PROJ_DIR = $(REPOROOTDIR)
 WEBCODEDIR = $(PROJ_DIR)/web_code
 BUILDDIR = $(PROJ_DIR)/build
 BINDIR = $(BUILDDIR)/bin
