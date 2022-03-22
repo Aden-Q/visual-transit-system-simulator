@@ -26,26 +26,25 @@ The simulation system models transit around the University of Minnesota campus v
 
 ## Directory Structures
 
-+   `config`: Contains `config.txt` which is a configuration file for bus stops and routes used by the transit simulation system, can be customized.
-+   `cpplint`: Automatic Google Style cpplint script.
-+   `docs`: Documentation files and images.
-+   `drivers`: Contains source code with the main function that is used to create the drivers files for entities in the simulation system.
-+   `googletest`:GoogleTest suits for unit testing and regression testing.
-+   `src`: Directory that contains all the source code (.cc AND .h) for the backend simulator. 
-+   `test`: Directory of creating unit tests, using [Google Test](https://github.com/google/googletest) framework.
-+   `build`: Created by `Makefile`, containing all the executables.
-
-+   `web_code`: Source code for the web server used to enable communication between the visualization component and the backend simulation system.
-+   `web_graphics`: Frontend HTML/CSS/JavaScript source code used to render the web page. It enables to configure and run the transit simulation system from the local browser.
++ `config`: Contains `config.txt` which is a configuration file for bus stops and routes used by the transit simulation system, can be customized.
++ `cpplint`: Automatic Google Style cpplint script.
++ `docs`: Documentation files and images.
++ `drivers`: Contains source code with the main function that is used to create the drivers files for entities in the simulation system.
++ `googletest`:GoogleTest suits for unit testing and regression testing.
++ `src`: Directory that contains all the source code (.cc AND .h) for the backend simulator.
++ `test`: Directory of creating unit tests, using [Google Test](https://github.com/google/googletest) framework.
++ `build`: Created by `Makefile`, containing all the executables.
++ `web_code`: Source code for the web server used to enable communication between the visualization component and the backend simulation system.
++ `web_graphics`: Frontend HTML/CSS/JavaScript source code used to render the web page. It enables to configure and run the transit simulation system from the local browser.
 
 ## Features
 
-- [x] Visualization on a web page
-- [x] Functionality to Pause / Resume
-- [x] Logging the statistics
-- [x] Runtime behavior modificaiton at runtime
-- [] Linking to a database server
-- [] Deployment on the clound
+- [X] Visualization on a web page
+- [X] Functionality to Pause / Resume
+- [X] Logging the statistics
+- [X] Runtime behavior modificaiton at runtime
+- [ ] Linking to a database server
+- [ ] Deployment on the clound
 
 ## Dependencies
 
@@ -127,19 +126,19 @@ $ ../cpplint/cpplint.py *.cc *.h
 
 `Doxygen` is used to generate documentation and UML for this project. The steps are following
 
-1.   Navigate to the `docs` directory.
+1. Navigate to the `docs` directory.
 
 ```bash
 $ cd docs
 ```
 
-2.   Generate the `html` pages and `latex` files for the documentation.
+2. Generate the `html` pages and `latex` files for the documentation.
 
 ```bash
 $ doxygen Doxyfile
 ```
 
-3.   Open the `index.html` file inside the `docs/html` directory in a browser which is the main page of the documentation.
+3. Open the `index.html` file inside the `docs/html` directory in a browser which is the main page of the documentation.
 
 ## Contributors
 
