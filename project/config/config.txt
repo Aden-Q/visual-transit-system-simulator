@@ -1,0 +1,47 @@
+ROUTE_GENERAL, Campus Connector
+
+Stop Name, Long, Lat, Pass Gen Prob
+
+ROUTE, East Bound
+
+STOP, Blegen Hall, 44.972392, -93.243774, .15
+STOP, Coffman, 44.973580, -93.235071, .3
+STOP, Oak Street at University Avenue, 44.975392, -93.226632, .025
+STOP, Transitway at 23rd Avenue SE, 44.975837, -93.222174, .05
+STOP, Transitway at Commonwealth Avenue, 44.980753, -93.180669, .05
+STOP, State Fairgrounds Lot S-108, 44.983375, -93.178810, .01
+STOP, Buford at Gortner Avenue, 44.984540, -93.181692, .01
+STOP, St. Paul Student Center, 44.984630, -93.186352, 0
+
+ROUTE, West Bound
+
+STOP, St. Paul Student Center, 44.984630, -93.186352, .35
+STOP, Buford at Gortner Avenue, 44.984482, -93.181657, .05
+STOP, State Fairgrounds Lot S-108, 44.983703, -93.178846, .01
+STOP, Transitway at Commonwealth Avenue, 44.980663, -93.180808, .01
+STOP, Thompson Center & 23rd Avenue SE, 44.976397, -93.221801, .025
+STOP, Ridder Arena, 44.978058, -93.229176, .05
+STOP, Pleasant Street at Jones-Eddy Circle, 44.978366, -93.236038, .1
+STOP, Bruininks Hall, 44.974549, -93.236927, .3
+STOP, Blegen Hall, 44.972638, -93.243591, 0
+
+ROUTE_GENERAL, Restaurant Connector
+
+Stop Name, Long, Lat, Pass Gen Prob
+
+ROUTE, North Bound
+
+STOP, Radius Hall, 44.983838, -93.231272, .15
+STOP, Bizzard Hall, 44.9829020, -93.230328, .3
+STOP, Magic Avenue, 44.980438, -93.226466, .2
+STOP, Prospect Park, 44.978011, -93.221273, .05
+STOP, Great Avenue, 44.975247, -93.213462, .01
+STOP, Malcolm Avenue, 44.974230, -93.209922, 0
+
+ROUTE, South Bound
+
+STOP, Malcolm Avenue, 44.974230, -93.209922, .3
+STOP, Surly Brewing, 44.973053, -93.211123, .5
+STOP, University Avenue, 44.969835, -93.212776, .3
+STOP, 25th Avenue, 44.975325, -93.216455, .2
+STOP, Radius Hall, 44.983838, -93.231272, 0
