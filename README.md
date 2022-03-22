@@ -1,59 +1,168 @@
+# Visual Transit System Simulator
 
-### Running the Transit Simulator and Visualization:
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
-#### Step by step for instructions for CSE Labs machines or vole users
+## Table of contents
 
-**<port_number> below should be a number above 8000 that includes the last 3 digits of your student id.**
-**So, if your student id number is: 1459345, use 8345, or 9345**
+- [Overview](##overview)
+- [Directory Structures](##directory-structures)
+- [Features](##features)
+- [Dependencies](##dependencies)
+- [Building](##building)
+- [Running](##running)
+- [Testing](##testing)
+- [Code Style](##code-style)
+- [Documentation](##documentation)
+- [Contributors](##contributors)
+- [License](##license)
 
-1. Navigate to base project directory(project/)  
-2. Make and run the server:
-```
+## Overview
+
+The simulation system models transit around the University of Minnesota campus via bus, displaying the routings and statistics on a webpage in a timely manner.
+
+### Demo
+
+![demo](docs/images/demo.gif)
+
+## Directory Structures
+
++   `config`:
+    +   Contains `config.txt` which is a configuration file for bus stops and routes used by the transit simulation system, can be customized.
++   `cpplint`:
+    +   `cpplint-cse.sh`: Automatic Google Style cpplint script that only works CSE lab machines.
+    +   `cpplint.py`: Python script of Google Style cpplint.
++   `docs`:
+    +   Documentation files and images.
+
++   `drivers`:
+    +   Contains source code with the main function that is used to create the drivers files for entities in the simulation system.
++   `googletest`:
+    +   GoogleTest suits for unit testing and regression testing.
+
++   `src`: 
+    +   Directory that contains all the source code (.cc AND .h) for the backend simulator. 
++   `test`:
+    +   Directory of creating unit tests, using [Google Test](https://github.com/google/googletest) framework.
++   `build`:
+    +   `bin`: Created by `Makefile`, containing all the executables.
+
++   `web_code`:
+    +   `web`: Source code for the web server used to enable communication between the visualization component and the backend simulation system.
++   `web_graphics`:
+    +   Frontend HTML/CSS/JavaScript source code used to render the web page. It enables to configure and run the transit simulation system from the local browser.
+
+## Features
+
+-[] Visualization on a web page
+
+-[] Functionality to Pause / Resume
+
+-[] Logging the statistics
+
+-[] Runtime behavior modificaiton at runtime
+
+-[] Linking to database server
+
+-[] Deployment on the clound
+
+## Dependencies
+
++ `g++`
++ `node`
++ `npm`
+
+## Building
+
+The project can be compiled across different platforms using `Makefile`. However, to enable most of the features and functionalities of the system. It recommended to compile it on a Linux machine. Then we can run the simulation system and the web server on a Linux machine and access it via a browser on a different platform (Linux, OSX, Windows, or even on a mobile).
+
+To compile and build the program, it is as simple as:
+
+```bash
 $ cd src
-$ make 
-$ cd ..
-$./build/bin/vis_sim <port_number>
-```
-#### You must run by doing `./build/bin/vis_sim <port_number>`.
-#### You _cannot_ cd to bin/ and run `./vis_sim <port_number>`
-3. Run your browser on vole or CSE Labs machine, and enter following address in the address bar of your browser (Firefox/Chrome):
-```
-http://127.0.0.1:<port_number>/web_graphics/project.html
-```
-  
-#### Step by step instructions for ssh users
-You can SSH using a Windows machine with Git Bash.
-```
-**<port_number> below should be a number above 8000 that includes the last 3 digits of your student id.**
-**So, if your student id number is: 1459345, use 8345, or 9345**
-
-ssh -L <port number>:127.0.0.1:<port_number> <x500>@<cse_labs_computer>.cselabs.umn.edu
+$ make
 ```
 
-1. Navigate to base project directory(project/)  
-2. make and start server:
+The built executable will be located in `./build/bin/`, named `vis_sim`.
+
+## Running
+
+To run the simulation and start the web server:
+
+```bash
+$ ./build/bin/vis_sim <port_number>
 ```
+
+The `port_number` is of your choice and should be a legal one (typically starting from 8000).
+
+Then run your local browser (Firefox/Chrome are guaranteed to have the best performance), and enter following address:
+
+```bash
+https://127.0.0.1:<port_number>/web_graphics/project.html
+```
+
+You will be directed to the main page of the simulation visualizer and you can play with it!
+
+## Testing
+
+All test cases are created with Google Test.
+
+### Unit Tests
+
+```bash
+# Example usage
+$ cd tests
+$ make
+$ ../build/bin/unittest
+```
+
+### Regression Tests
+
+```bash
+# Example usage
+# The output of diff command should be silent
 $ cd src
-$ make 
-$ cd ..
-$./build/bin/vis_sim <port_number>
+$ make regression_test
+$ cd ../build/bin
+$ ./regression_test > [log_file1]
+$ ./regression_test > [log_file2]
+$ diff [log_file1] [log_file2]
 ```
-#### You must run by doing `./build/bin/vis_sim <port_number>`.
-#### You _cannot_ cd to bin/ and run `./vis_sim <port_number>`
-3. Navigate to the following address into the address bar of a browser (Firefox/Chrome) running on your LOCAL machine (e.g, your PC):
+
+## Code style
+
+The code in this project is [Google Style](https://google.github.io/styleguide/cppguide.html) compliant and uses [cpplint](https://github.com/google/styleguide/tree/gh-pages/cpplint) for linting.
+
+For style check, do the following
+
+```bash
+$ ./cpplint/cpplint.py [path_target_dir] [file_name]
+# Example usage
+$ cd src
+$ ../cpplint/cpplint.py *.cc *.h
 ```
-http://127.0.0.1:<port_number>/web_graphics/project.html
+
+## Documentation
+
+`Doxygen` is used to generate documentation and UML for this project. The steps are following
+
+1.   Navigate to the `docs` directory.
+
+```bash
+$ cd docs
 ```
-**NOTE**: As part of your development process, you should ensure that **all Tests** pass before pushing any changes. 
 
-### To Compile and Run Unit Tests created with Google Test:
+2.   Generate the `html` pages and `latex` files for the documentation.
 
-- cd `tests`
-- `make`
-- `../build/bin/unittest`
+```bash
+$ doxygen Doxyfile
+```
 
-### Style Check:
+3.   Open the `index.html` file inside the `docs/html` directory in a browser which is the main page of the documentation.
 
-- `[path_to_cpplint]/cpplint/cpplint-cse.sh --root=[path_target_dir] [file_name]`
+## Contributors
 
+[Zecheng Qian](https://aden-q.github.io/) - qian0102@umn.edu
 
+## License
+
+[MIT License](LICENSE)
