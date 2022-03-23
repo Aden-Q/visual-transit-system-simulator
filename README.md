@@ -4,17 +4,17 @@
 
 ## Table of contents
 
-- [Overview](##overview)
-- [Directory Structures](##directory-structures)
-- [Features](##features)
-- [Dependencies](##dependencies)
-- [Building](##building)
-- [Running](##running)
-- [Testing](##testing)
-- [Code Style](##code-style)
-- [Documentation](##documentation)
-- [Contributors](##contributors)
-- [License](##license)
+- [Overview](#overview)
+- [Directory Structures](#directory-structures)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Building](#building)
+- [Running](#running)
+- [Testing](#testing)
+- [Code Style](#code-style)
+- [Documentation](#documentation)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Overview
 
