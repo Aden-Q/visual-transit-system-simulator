@@ -18,7 +18,7 @@
 
 ## Overview
 
-The simulation system models transit around the University of Minnesota campus via bus, displaying the routings and statistics on a webpage in a timely manner.
+The simulation system models bus transit around the University of Minnesota campus, and can display the routings and statistics on a webpage in a timely manner.
 
 ### System Architecture
 
@@ -47,8 +47,8 @@ The simulation system models transit around the University of Minnesota campus v
 - [X] Functionality to Pause / Resume
 - [X] Logging the statistics
 - [X] Runtime behavior modificaiton at runtime
-- [ ] Linking to a database server
-- [ ] Deployment on the clound
+- [ ] Linking to an external database server
+- [ ] Deploying on the clound
 
 ## Dependencies
 
