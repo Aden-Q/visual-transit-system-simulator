@@ -1,1 +1,14 @@
-theme: jekyll-theme-slate
+title: Visual Transit System Simulator
+author: Zecheng Qian
+email: qian0102@umn.edu
+description: >
+  What does not kill me makes me stronger.
+
+# theme
+theme: minima
+
+# social links
+twitter_username: ZechengQ # DO NOT include the @ character, or else the build will fail!
+github_username:  Aden-Q # DO NOT include the @ character, or else the build will fail!
+
+show_excerpts: true # set to false to remove excerpts on the homepage
