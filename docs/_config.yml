@@ -5,7 +5,7 @@ description: >
   What does not kill me makes me stronger.
 
 # theme
-theme: minima
+theme: jekyll-theme-cayman
 
 # social links
 twitter_username: ZechengQ # DO NOT include the @ character, or else the build will fail!
