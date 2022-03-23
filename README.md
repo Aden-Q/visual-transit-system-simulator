@@ -48,7 +48,7 @@ The simulation system models bus transit around the University of Minnesota camp
 - [X] Logging the statistics
 - [X] Runtime behavior modificaiton at runtime
 - [ ] Linking to an external database server
-- [ ] Deploying on the clound
+- [ ] Deploying the on the cloud
 
 ## Dependencies
 
@@ -142,7 +142,7 @@ $ cd docs
 $ doxygen Doxyfile
 ```
 
-3. Open the `index.html` file inside the `docs/html` directory in a browser which is the main page of the documentation.
+3. Open the `index.html` file inside the `docs/html` directory with a browser and you will be directed to the main page of the project document.
 
 ## Contributors
 
