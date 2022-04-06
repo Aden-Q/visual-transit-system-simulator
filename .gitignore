@@ -34,4 +34,5 @@
 *.DS_Store
 /docs/html/*
 /docs/latex/*
+/docs/iterations/*
 build
